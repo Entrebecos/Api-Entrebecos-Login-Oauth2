@@ -1,6 +1,6 @@
 #  <img align="center" alt="Lucas-Spring" height="90" width="85" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg" /> API RESTful 
 
-Aplicação para realizar login e cadastramentos de usuários. 
+Aplicação para realizar login e cadastramentos de usuários. Leia a documentação para saber mais sobre a aplicação.
 
 
 
