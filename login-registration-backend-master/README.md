@@ -1,15 +1,25 @@
-# API RESTful
+#  <img align="center" alt="Lucas-Spring" height="90" width="85" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg" /> API RESTful 
 
-Aplicação para cadastrar e fazer login de usuários.
+Aplicação para realizar login e cadastramentos de usuários. 
 
 
 
+## Funcionalidades
+- [x] Cadastro de usuário
+- [x] Autenticação de token por email
+- [x] Login com email e senha
+- [x] Login com Google e Facebook (Oauth2)
+- [x] Conexão com banco de dados MySQL
+- [x] Alterar usuário
+
+## Tecnologias
 
 - [x] Spring Boot
 - [x] Spring Security
 - [x] Java Mail
 - [x] Verificação de email com expiração
 - [x] Spring Boot
+- [x] Oauth2
 
 ## Diagrama
 ![Screenshot 2021-01-13 at 23 38 08](https://user-images.githubusercontent.com/40702606/104789980-15581a00-578e-11eb-998d-30f2e6a9f461.png)
@@ -32,12 +42,12 @@ npm install -g maildev
 
 ### CURL
 ```
-curl --location --request POST 'localhost:8080/entrebecos/cadastro' \
+curl --location --request POST 'http://localhost:8080/entrebecos/cadastro' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "firstName": "Lucas",
     "lastName": "Costa",
-    "email": "lucas@gmail.com",
+    "email": "lucasa@gmail.com",
     "password": "lucas123",
     "telefone": 11943442322,
     "endereco": "Rua da Areia, 120",
@@ -45,3 +55,7 @@ curl --location --request POST 'localhost:8080/entrebecos/cadastro' \
     "data_nascimento": "2000-10-13"
 }'
 ```
+
+## Documentação Postman
+
+[Clique aqui](https://documenter.getpostman.com/view/23628011/2s8YzTUNVm)
