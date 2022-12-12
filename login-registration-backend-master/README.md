@@ -1,33 +1,47 @@
-# Login Registration Backend 
+# API RESTful
 
-Complete login registration backend system using Spring Boot.
+Aplicação para cadastrar e fazer login de usuários.
 
-[![YouTube Video](https://user-images.githubusercontent.com/40702606/104790682-d62ac880-578f-11eb-8353-aa68739ffe42.png)](https://www.youtube.com/watch?v=QwQuro7ekvc)
+
+
 
 - [x] Spring Boot
 - [x] Spring Security
 - [x] Java Mail
-- [x] Email verification with expiry
+- [x] Verificação de email com expiração
 - [x] Spring Boot
 
-## Diagram
+## Diagrama
 ![Screenshot 2021-01-13 at 23 38 08](https://user-images.githubusercontent.com/40702606/104789980-15581a00-578e-11eb-998d-30f2e6a9f461.png)
 
-## Email verification link with expiry
-![Screenshot 2021-01-13 at 23 37 33](https://user-images.githubusercontent.com/40702606/104789893-0c674880-578e-11eb-939a-2a1cd3a8dfd2.png)
+## Verificação de email com expiração
+![Email](https://user-images.githubusercontent.com/111810585/206878406-6b727624-28a5-4a2c-aa00-1a22b53e9223.png)
 
-## Example requests
+## Instruções para funcionamento do Maildev
+
+1 - Instale o maildev pelo prompt de comando(CMD)<br>
+npm install -g maildev
+
+2 - Digite maildev no prompt de comando. 
+
+3 - O maildev irá rodar em http://localhost:1080
+
+## Exemplo de requisições
 ### Postman
-![Screenshot 2021-01-13 at 23 37 57](https://user-images.githubusercontent.com/40702606/104790087-7a137480-578e-11eb-8141-307a8850c39e.png)
+![Requisição](https://user-images.githubusercontent.com/111810585/206878651-c49570e7-dabe-48e1-a062-7fd4bb31c41e.png)
 
 ### CURL
 ```
-curl --location --request POST 'localhost:8080/api/v1/registration' \
+curl --location --request POST 'localhost:8080/entrebecos/cadastro' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-    "firstName": "Amigos",
-    "lastName": "Code",
-    "email": "hellow@amigoscode.com",
-    "password": "password"
+    "firstName": "Lucas",
+    "lastName": "Costa",
+    "email": "lucas@gmail.com",
+    "password": "lucas123",
+    "telefone": 11943442322,
+    "endereco": "Rua da Areia, 120",
+    "cep": "03240-060",
+    "data_nascimento": "2000-10-13"
 }'
 ```
