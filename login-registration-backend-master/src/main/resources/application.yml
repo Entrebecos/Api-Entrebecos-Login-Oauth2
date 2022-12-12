@@ -1,0 +1,54 @@
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+
+spring:
+  datasource:
+    password: 2212
+    url: jdbc:postgresql://localhost:5432/registration
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+
+  mail:
+    host: localhost
+    port: 1025
+    username: hello
+    password: hello
+
+    properties:
+      mail:
+        smtp:
+          ssl:
+            trust: "*"
+          auth: true
+          starttls:
+            enable: true
+          connectiontimeout: 5000
+          timeout: 3000
+          writetimeout: 5000
+
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: 18836873712-9iv28ad2d7v1d63e9u7i31g9gv16vbo6.apps.googleusercontent.com
+            clientSecret:  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
+            scope:
+              - email
+              - profile
+
+          facebook:
+            clientId: 1768396006880007
+            clientSecret: 2c71ce6a6828b4b791becce13c4a75dd
+            scope:
+              - email
+              - public_profile
