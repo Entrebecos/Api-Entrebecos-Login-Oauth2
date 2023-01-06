@@ -18,7 +18,8 @@ Aplicação para realizar login e cadastramentos de usuários. Leia a documenta�
 - [x] Spring Boot
 - [x] Spring Security
 - [x] Java Mail
-- [x] Spring Boot
+- [x] Jpa hibernate
+- [x] MySQL
 
 ## Diagrama
 ![Screenshot 2021-01-13 at 23 38 08](https://user-images.githubusercontent.com/40702606/104789980-15581a00-578e-11eb-998d-30f2e6a9f461.png)
