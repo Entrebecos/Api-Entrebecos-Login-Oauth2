@@ -14,7 +14,7 @@ Aplicação para realizar login e cadastramentos de usuários. Leia a documenta�
 - [x] Verificação de email com expiração
 
 ## Tecnologias
-
+- [x] Spring
 - [x] Spring Boot
 - [x] Spring Security
 - [x] Java Mail
