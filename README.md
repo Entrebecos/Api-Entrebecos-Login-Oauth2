@@ -18,7 +18,7 @@ Aplicação para realizar login e cadastramentos de usuários. Leia a documenta�
 - [x] Spring Boot
 - [x] Spring Security
 - [x] Java Mail
-- [x] Jpa hibernate
+- [x] JPA - Hibernate
 - [x] MySQL
 
 ## Diagrama
